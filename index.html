@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="path/to/default.css">
+    <style>
+        #loader {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="loader">Loading...</div>
+<div id="content" style="display:none;"></div>
+
+<button id="toggle-theme">Toggle Theme</button>
+
+<script>
+    let currentTheme = 'light'; // ou 'dark'
+
+    function hideLoader() {
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+    }
+
+    function loadPage(page) {
+        const contentDiv = document.getElementById('content');
+        fetch(`/${currentTheme}/${page}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Resource not found');
+                }
+                return response.text();
+            })
+            .then(data => {
+                contentDiv.innerHTML = data;
+                fixPaths();
+                hideLoader();
+            })
+            .catch(error => {
+                console.error('Error loading page:', error);
+                hideLoader(); // Mesmo em caso de erro, esconda o loader
+            });
+    }
+
+    function fixPaths() {
+        document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+            link.href = `/${currentTheme}/${link.getAttribute('href')}`;
+        });
+        document.querySelectorAll('script').forEach(script => {
+            if (script.getAttribute('src')) {
+                script.src = `/${currentTheme}/${script.getAttribute('src')}`;
+            }
+        });
+        document.querySelectorAll('img').forEach(img => {
+            img.src = `/${currentTheme}/${img.getAttribute('src')}`;
+        });
+    }
+
+    function toggleTheme() {
+        currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+        loadPage('index.html');
+    }
+
+    document.getElementById('toggle-theme').addEventListener('click', toggleTheme);
+
+    // Carrega a página inicial e exibe o conteúdo
+    loadPage('index.html');
+</script>
+
+</body>
+</html>
