@@ -6567,3 +6567,22 @@ h2.case_studies_section {
 span.title_color_certifications {
   color: black;
 }
+
+
+/*----------- certifications page--------------------------*/
+
+body.v-light.bg-dots.dsn-ajax.dsn-cursor-effect {
+  background-image: none;
+}
+
+.background-overlay.bg-pattern.p-absolute.left-0.top-0.w-100.h-100 {
+  background-image: none;
+}
+
+
+/*----------- end certifications page--------------------------*/
+
+
+.dsn-posts.dsn-post-type-cards.box-content-hover.d-grid.dsn-isotope.use-filter.v-dark-head {
+  height: 0px !important;
+}
