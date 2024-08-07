@@ -6586,3 +6586,8 @@ body.v-light.bg-dots.dsn-ajax.dsn-cursor-effect {
 .dsn-posts.dsn-post-type-cards.box-content-hover.d-grid.dsn-isotope.use-filter.v-dark-head {
   height: 0px !important;
 }
+
+
+.text-menu.menu-about-me.words.chars.splitting {
+  color: white;
+}
