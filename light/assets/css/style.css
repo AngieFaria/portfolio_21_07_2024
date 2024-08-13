@@ -6591,3 +6591,34 @@ body.v-light.bg-dots.dsn-ajax.dsn-cursor-effect {
 .text-menu.menu-about-me.words.chars.splitting {
   color: white;
 }
+
+
+/*----------- modal-------------------------*/
+
+
+div#exampleModal  {
+  background-color: rgba(0,0,0,0.85);
+}
+
+
+
+
+button.btn.btn-link.text-decoration-none.title_color_certifications.btn-button-link-proto {
+    color: black;
+    text-decoration: underline !important;
+    background-color: none;
+    box-shadow: none !important;
+    
+}
+
+
+.modal-dialog.modal-pop-up {
+display: flex;
+align-items: center;
+min-height: calc(100% - 1rem);
+max-width: none;
+width: 60rem;
+}
+
+
+/*----------- modal-------------------------*/
