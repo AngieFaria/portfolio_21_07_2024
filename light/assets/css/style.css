@@ -575,12 +575,20 @@ body:not(.dsn-cursor-effect) #dsn_cursor, body:not(.dsn-cursor-effect) #dsn_curs
   pointer-events: none;
 }
 
+
+
+/*-----------------------------------------------------------
+
 .bg-1 {
   background-image: url("../img/bg-1.png");
   background-position: bottom left;
   background-repeat: no-repeat;
   opacity: 0.3;
 }
+-------------------------------------------------------------*/
+
+
+
 
 .experience .exp-number {
   background-image: url("../img/bg-2.svg");
@@ -2977,7 +2985,9 @@ a:hover, a:active {
   color: var(--heading-color);
 }
 .filtering-t .filtering-wrap .filtering button.active {
-  color: var(--theme-color);
+  color: #AE917A;
+  text-decoration: underline;
+  font-weight: 600;
 }
 @media only screen and (max-width: 575px) {
   .filtering-t .filtering-wrap .filtering button {
@@ -6622,3 +6632,81 @@ width: 60rem;
 
 
 /*----------- modal-------------------------*/
+
+.ah-headline.clip .ah-words-wrapper::after {
+  background-color: #AE917A
+}
+
+
+span#u-skills-circle {
+  color: #020002;
+  background-color: #AE917A;
+}
+
+a.dsn-btn.dsn-border.border-color-default.background-section.effect-ajax.border-rdu.move-circle-homepage-header.dsn-parallax-hover {
+  background-color: #AE917A;
+  color:#2F2F2F;
+  font-weight: 600;
+}
+
+#proto-section{
+  background-color: #020002;
+}
+
+#proto-section-2{
+  background-color: #020002;
+}
+
+
+#circle-proto-2 .circle-before:before {
+  border: 0;
+  border-radius: 50%;
+  background-color: #AE917A;
+}
+
+#proto-2 .prev-container .container-inner:after {
+  background-color: white;
+}
+
+#proto-2 .next-container .container-inner:before {
+  background-color: white;
+}
+
+
+#proto-2 .prev-container.prev-container .triangle {
+  border-right: 6px solid white;
+}
+
+
+#proto-2 .next-container.next-container .triangle {
+  border-left: 6px solid white;
+
+}
+
+
+#proto-2  span.swiper-pagination-bullet.swiper-pagination-bullet-active.swiper-pagination-bullet-active-main {
+  background-color: white;
+}
+
+#proto-2 .swiper-pagination-bullet {
+  background: white;
+}
+
+
+img#icon_talk {
+  width: 50px
+}
+
+
+a.dsn-btn.dsn-border.border-color-default.background-section.border-rdu.move-circle-homepage-header.dsn-parallax-hover {
+  background-color: #AE917A;
+  font-weight: 500;
+  color: #020002;
+}
+
+
+a.dsn-btn.dsn-border.border-color-default.background-section.border-rdu.move-circle-homepage-header {
+  background-color: #AE917A;
+  font-weight: 500;
+  color: #020002;
+}
