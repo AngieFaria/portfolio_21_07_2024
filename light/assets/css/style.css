@@ -6567,7 +6567,7 @@ body.tax-product_tag #dsn_header, body.tax-product_cat #dsn_header {
 }
 
 
-/*----------- CSS modify--------------------------*/
+/*----------- CSS modify----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 h2.case_studies_section {
@@ -6598,9 +6598,7 @@ body.v-light.bg-dots.dsn-ajax.dsn-cursor-effect {
 }
 
 
-.text-menu.menu-about-me.words.chars.splitting {
-  color: white;
-}
+
 
 
 /*----------- modal-------------------------*/
@@ -6632,6 +6630,35 @@ width: 60rem;
 
 
 /*----------- modal-------------------------*/
+
+div#exampleModalCakes {
+  background-color: #020002;
+}
+
+
+div#exampleModalApex, div#exampleModalCakes, div#exampleModalHalloween , div#exampleModalPizza, div#exampleModalSexShop, div#exampleModalVans  {
+  background-color: rgba(0, 0, 0, 0.8)
+}
+
+
+div#exampleModalw3cx,
+div#exampleModalIDFAccessibility,
+div#exampleModalIDFDesignFor21stCenturywithDonNorman,
+div#exampleModalDesigninThinking,
+div#exampleModalIDFDesignForBetterWorld,
+div#exampleModalIDFPerception,
+div#exampleModalIDFUserExperience,
+div#exampleModalJourneyMapping {
+  background-color: rgba(0, 0, 0, 0.8)
+
+}
+
+
+
+
+
+
+
 
 .ah-headline.clip .ah-words-wrapper::after {
   background-color: #AE917A
@@ -6709,4 +6736,8 @@ a.dsn-btn.dsn-border.border-color-default.background-section.border-rdu.move-cir
   background-color: #AE917A;
   font-weight: 500;
   color: #020002;
+}
+
+div#icon_about {
+  width:50px;
 }
