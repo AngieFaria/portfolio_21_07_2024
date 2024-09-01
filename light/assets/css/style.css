@@ -6741,3 +6741,12 @@ a.dsn-btn.dsn-border.border-color-default.background-section.border-rdu.move-cir
 div#icon_about {
   width:50px;
 }
+
+h6#sub-text-proto  {
+
+font-size: 1rem; 
+font-weight: 400;
+text-decoration: underline;
+line-height: 1.5rem;
+font-family:'poppins' sans-serif;
+}
