@@ -6752,9 +6752,51 @@ font-family:'poppins' sans-serif;
 }
 
 
-button#button_proto {
+button#button_proto_apex,
+button#button_proto_pizza,
+button#button_proto_cakes,
+button#button_proto_halloween,
+button#button_proto_vans,
+button#button_proto_sex_shop
+
+{
   background-color: transparent;
   border: none;
   color: black;
   text-decoration: underline;
+  margin-bottom: 3rem !important;
+  padding-left: 0;
 }
+
+div#apexModal,
+div#pizzaModal,
+div#cakesModal,
+div#halloweenModal,
+div#vansModal,
+div#sexShopModal{
+  background-color: rgba(0, 0, 0, 0.8)
+}
+
+.modal-footer,
+.modal-header {
+  border: none !important;
+}
+
+
+h1#apexModalLabel,
+h1#pizzaModalLabel,
+h1#cakesModalLabel,
+h1#halloweenModalLabel,
+h1#vansModalLabel,
+h1#sexShopModalLabel{
+  color: #020002;
+}
+
+button#button-close-modal {
+  background-color: #AE917A;
+  color: #020002;
+  border: none;
+  font-weight: 400;
+}
+
+
