@@ -25,6 +25,8 @@
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon" href="images/ico/apple-touch-icon.png">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <script src="js/jquery.js"></script>
 
 </head>
@@ -163,7 +165,7 @@
 
                    <div class="section-title  pinned-element">
                        <p class="description d-inline-block p-relative circle-before mb-10">
-                           <span>TESTE</span>
+                           <span>teste</span>
                        </p>
                        <h2 class="title-h2 text-upper">PROTOTYPING <b>IN ACTION</b></h2>
                    </div>
@@ -185,6 +187,11 @@
    
 
     </header>
+
+
+                            
+                            
+                            
 
 
 
@@ -216,61 +223,139 @@
                             </div>
                         </div>
                         <div class="dsn-posts dsn-post-type-cards  d-grid grid-md-3 dsn-isotope use-filter v-dark-head">
-    
-                            <article
-                                    class="dsn-item-post grid-item over-hidden p-relative box-hover-image w-100 desktop">
-                                    <div class="box-content d-flex certifications_section" style="display: flex;">
-                                        <!-- Wrap the GIF with a button to trigger the modal -->
-                                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalApex" data-backdrop="false">
-                                            <img class="cover-bg-img" style="height: 100%; object-fit: contain; width: 100%" src="assets/img/portfolio/proto/apex.gif" alt=""/>
-                                        </button>
-                                    </div>
-                                
-                                    <div class="d-inline-block dsn-category dsn-bg metas mt-10 entry-meta">
-                                        <!-- Wrap the text in a button to trigger the modal -->
-                                        <button type="button" class="btn btn-link text-decoration-none title_color_certifications btn-button-link-proto" data-toggle="modal" data-target="#exampleModalApex" data-backdrop="false" style="background: none; border: none; padding: 0; margin-bottom: 3rem; margin-bottom: 3rem;">
-                                            Apex Legends Game
-                                        </button>
-                                    </div>
-    
-    
-                            </article>
-                            <article
-                                    class="dsn-item-post grid-item over-hidden p-relative box-hover-image w-100 production desktop">
-                                    <div class="box-content d-flex certifications_section" style="display: flex;">
-                                        <!-- Wrap the GIF with a button to trigger the modal -->
-                                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalApex" data-backdrop="false">
-                                            <img class="cover-bg-img" style="height: 100%; object-fit: contain; width: 100%" src="assets/img/portfolio/proto/pizza.gif" alt=""/>
-                                        </button>
-                                    </div>
-                                
-                                    <div class="d-inline-block dsn-category dsn-bg metas mt-10 entry-meta">
-                                        <!-- Wrap the text in a button to trigger the modal -->
-                                        <button type="button" class="btn btn-link text-decoration-none title_color_certifications btn-button-link-proto" data-toggle="modal" data-target="#exampleModalApex" data-backdrop="false" style="background: none; border: none; padding: 0; margin-bottom: 3rem;">
-                                            Pizza Restaurant
-                                        </button>
-                                    </div>
-    
-    
-                            </article>
-                            <article
-                                    class="dsn-item-post grid-item over-hidden p-relative box-hover-image w-100 desktop">
-                                    <div class="box-content d-flex certifications_section" style="display: flex;">
-                                        <!-- Wrap the GIF with a button to trigger the modal -->
-                                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalApex" data-backdrop="false">
-                                            <img class="cover-bg-img" style="height: 100%; object-fit: contain; width: 100%" src="assets/img/portfolio/proto/cakes.gif" alt=""/>
-                                        </button>
-                                    </div>
-                                
-                                    <div class="d-inline-block dsn-category dsn-bg metas mt-10 entry-meta">
-                                        <!-- Wrap the text in a button to trigger the modal -->
-                                        <button type="button" class="btn btn-link text-decoration-none title_color_certifications btn-button-link-proto" data-toggle="modal" data-target="#exampleModalApex" data-backdrop="false" style="background: none; border: none; padding: 0; margin-bottom: 3rem;">
-                                           Birthday Cake
-                                        </button>
-                                    </div>
-    
-    
-                            </article>
+
+
+
+
+
+
+
+                        
+
+
+                            
+<!-- Apex------------------------------------------------------------------------->
+                         
+        <!-- Article with GIF -->
+        <article class="dsn-item-post grid-item over-hidden p-relative box-hover-image w-100 desktop">
+            <div class="box-content d-flex certifications_section" style="display: flex;">
+                <!-- Wrap the GIF with a button to trigger the modal -->
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal" data-backdrop="false">
+                    <img class="cover-bg-img" style="height: 100%; object-fit: contain; width: 100%" src="assets/img/portfolio/proto/apex.gif" alt=""/>
+                </button>
+            </div>
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="button_proto">
+            Apex Legends Game
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <video controls class="w-100">
+                            <source src="assets/img/portfolio/video/apex.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </article>
+        <!-- End Apex------------------------------------------------------------------------->
+
+
+
+       <!-- pizza------------------------------------------------------------------------->
+                         
+        <!-- Article with GIF -->
+        <article class="dsn-item-post grid-item over-hidden p-relative box-hover-image w-100 desktop">
+            <div class="box-content d-flex certifications_section" style="display: flex;">
+                <!-- Wrap the GIF with a button to trigger the modal -->
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal" data-backdrop="false">
+                    <img class="cover-bg-img" style="height: 100%; object-fit: contain; width: 100%" src="assets/img/portfolio/proto/pizza.gif" alt=""/>
+                </button>
+            </div>
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="button_proto">
+            Pizza Restaurant
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <video controls class="w-100">
+                            <source src="assets/img/portfolio/video/pizza.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </article>
+        <!-- pizza Apex------------------------------------------------------------------------->
+        
+        
+        <!-- sex shop------------------------------------------------------------------------->
+                         
+        <!-- Article with GIF -->
+        <article class="dsn-item-post grid-item over-hidden p-relative box-hover-image w-100 desktop">
+            <div class="box-content d-flex certifications_section" style="display: flex;">
+                <!-- Wrap the GIF with a button to trigger the modal -->
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal" data-backdrop="false">
+                    <img class="cover-bg-img" style="height: 100%; object-fit: contain; width: 100%" src="assets/img/portfolio/video/sex_shop_coever.png" alt=""/>
+                </button>
+            </div>
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="button_proto">
+            Sex Shop App
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <video controls class="w-100">
+                            <source src="assets/img/portfolio/video/sex_shop_video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </article>
+        <!-- sex shop------------------------------------------------------------------------->
                         
                          
     
@@ -278,60 +363,127 @@
 
                         <div class="dsn-posts dsn-post-type-cards  d-grid grid-md-3 dsn-isotope use-filter v-dark-head ">
     
-                            <article
-                                    class="dsn-item-post grid-item over-hidden p-relative box-hover-image w-100 desktop">
-                                    <div class="box-content d-flex certifications_section" style="display: flex;">
-                                        <!-- Wrap the GIF with a button to trigger the modal -->
-                                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalApex" data-backdrop="false">
-                                            <img class="cover-bg-img" style="height: 100%; object-fit: contain; width: 100%" src="assets/img/portfolio/proto/halloween.gif" alt=""/>
-                                        </button>
-                                    </div>
-                                
-                                    <div class="d-inline-block dsn-category dsn-bg metas mt-10 entry-meta">
-                                        <!-- Wrap the text in a button to trigger the modal -->
-                                        <button type="button" class="btn btn-link text-decoration-none title_color_certifications btn-button-link-proto" data-toggle="modal" data-target="#exampleModalApex" data-backdrop="false" style="background: none; border: none; padding: 0; margin-bottom: 3rem;">
-                                            Halloween: streaming platform
-                                        </button>
-                                    </div>
+         <!-- halloween------------------------------------------------------------------------->
+                         
+        <!-- Article with GIF -->
+        <article class="dsn-item-post grid-item over-hidden p-relative box-hover-image w-100 desktop">
+            <div class="box-content d-flex certifications_section" style="display: flex;">
+                <!-- Wrap the GIF with a button to trigger the modal -->
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal" data-backdrop="false">
+                    <img class="cover-bg-img" style="height: 100%; object-fit: contain; width: 100%" src="assets/img/portfolio/proto/halloween.gif" alt=""/>
+                </button>
+            </div>
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="button_proto">
+            Apex Legends Game
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <video controls class="w-100">
+                            <source src="assets/img/portfolio/video/halloween.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </article>
+        <!-- halloween Apex------------------------------------------------------------------------->
     
-    
-                            </article>
-                            <article
-                                    class="dsn-item-post grid-item over-hidden p-relative box-hover-image w-100 production app">
-                                    <div class="box-content d-flex certifications_section" style="display: flex;">
-                                        <!-- Wrap the GIF with a button to trigger the modal -->
-                                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalApex" data-backdrop="false">
-                                            <img class="cover-bg-img" style="height: 100%; object-fit: contain; width: 100%" src="assets/img/portfolio/video/sex_shop_video-ezgif.com-resize.gif" alt=""/>
-                                        </button>
-                                    </div>
-                                
-                                    <div class="d-inline-block dsn-category dsn-bg metas mt-10 entry-meta">
-                                        <!-- Wrap the text in a button to trigger the modal -->
-                                        <button type="button" class="btn btn-link text-decoration-none title_color_certifications btn-button-link-proto" data-toggle="modal" data-target="#exampleModalApex" data-backdrop="false" style="background: none; border: none; padding: 0; margin-bottom: 3rem;">
-                                            Sex shop app
-                                        </button>
-                                    </div>
-    
-    
-                            </article>
-                            <article
-                                    class="dsn-item-post grid-item over-hidden p-relative box-hover-image w-100 app">
-                                    <div class="box-content d-flex certifications_section" style="display: flex;">
-                                        <!-- Wrap the GIF with a button to trigger the modal -->
-                                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalApex" data-backdrop="false">
-                                            <img class="cover-bg-img" style="height: 100%; object-fit: contain; width: 100%" src="assets/img/portfolio/proto/vans.png" alt=""/>
-                                        </button>
-                                    </div>
-                                
-                                    <div class="d-inline-block dsn-category dsn-bg metas mt-10 entry-meta">
-                                        <!-- Wrap the text in a button to trigger the modal -->
-                                        <button type="button" class="btn btn-link text-decoration-none title_color_certifications btn-button-link-proto" data-toggle="modal" data-target="#exampleModalApex" data-backdrop="false" style="background: none; border: none; padding: 0;">
-                                            Vans app
-                                        </button>
-                                    </div>
-    
-    
-                            </article>
+
+        <!-- cakes------------------------------------------------------------------------->
+                         
+        <!-- Article with GIF -->
+        <article class="dsn-item-post grid-item over-hidden p-relative box-hover-image w-100 desktop">
+            <div class="box-content d-flex certifications_section" style="display: flex;">
+                <!-- Wrap the GIF with a button to trigger the modal -->
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal" data-backdrop="false">
+                    <img class="cover-bg-img" style="height: 100%; object-fit: contain; width: 100%" src="assets/img/portfolio/proto/cakes.gif" alt=""/>
+                </button>
+            </div>
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="button_proto">
+            Apex Legends Game
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <video controls class="w-100">
+                            <source src="assets/img/portfolio/video/cakes.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </article>
+        <!-- cakes end------------------------------------------------------------------------->
+        
+        
+        <!-- vans------------------------------------------------------------------------->
+                         
+        <!-- Article with GIF -->
+        <article class="dsn-item-post grid-item over-hidden p-relative box-hover-image w-100 desktop">
+            <div class="box-content d-flex certifications_section" style="display: flex;">
+                <!-- Wrap the GIF with a button to trigger the modal -->
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal" data-backdrop="false">
+                    <img class="cover-bg-img" style="height: 100%; object-fit: contain; width: 100%" src="assets/img/portfolio/proto/vans.png" alt=""/>
+                </button>
+            </div>
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="button_proto">
+            Apex Legends Game
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <video controls class="w-100">
+                            <source src="assets/img/portfolio/video/vans.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </article>
+        <!-- End vans------------------------------------------------------------------------->
                          
     
                         </div>
@@ -381,6 +533,8 @@
 <script src="js/resize-sensor.js"></script>
 <script src="js/jquery-sticky-sidebar.js"></script>
 <script src="js/main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 

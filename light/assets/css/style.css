@@ -6750,3 +6750,11 @@ text-decoration: underline;
 line-height: 1.5rem;
 font-family:'poppins' sans-serif;
 }
+
+
+button#button_proto {
+  background-color: transparent;
+  border: none;
+  color: black;
+  text-decoration: underline;
+}
