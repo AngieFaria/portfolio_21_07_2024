@@ -6746,7 +6746,8 @@ h6#sub-text-proto  {
 
 font-size: 1rem; 
 font-weight: 400;
-text-decoration: underline;
+/*----------------------- text-decoration: underline;-------------------------------------------*/
+  margin-bottom: 3rem !important;
 line-height: 1.5rem;
 font-family:'poppins' sans-serif;
 }
@@ -6763,7 +6764,7 @@ button#button_proto_sex_shop
   background-color: transparent;
   border: none;
   color: black;
-  text-decoration: underline;
+  /*----------------------- text-decoration: underline;-------------------------------------------*/
   margin-bottom: 3rem !important;
   padding-left: 0;
 }
@@ -6800,3 +6801,4 @@ button#button-close-modal {
 }
 
 
+/*------------------------------------------------------------------*/
