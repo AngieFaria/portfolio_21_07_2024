@@ -6613,7 +6613,7 @@ div#exampleModal  {
 
 button.btn.btn-link.text-decoration-none.title_color_certifications.btn-button-link-proto {
     color: black;
-    text-decoration: underline !important;
+    /*----------------------- text-decoration: underline;-------------------------------------------*/
     background-color: none;
     box-shadow: none !important;
     
