@@ -382,10 +382,10 @@
                 </p>
 
 
-                <div style="display: flex; flex-direction: row;">
-                    <img style="width:600px;margin-right: 70px;  margin-top: 3rem; width: 1600px;" src="assets/img/portfolio/project1/gogest/user_journey.png"> </img>
+                <div class="zoom-container">
+                    <img class="zoom-image" src="assets/img/portfolio/project1/gogest/user_journey.png" alt="User Journey">
                 </div>
-
+                
              
 
                 <h2 style="font-weight: 400;margin-top: 5rem;" > Idea Explosion - Creativity Gone Wild</h2>
@@ -395,10 +395,10 @@
                 <p style="line-height: 30px;"> This user flow outlines the onboarding journey for SaaS customers, from the moment they start their free trial, the final purchase decision to the onboarding process/adaptation to the software.
                     By simplifying the process and providing helpful guidance, the goal is to minimize user drop-off and maximize engagement, leading users to confidently continue to renew the plan annually.
                 </p>
-                    <div style="display: flex; flex-direction: row;">
-                        <img style="width:600px;margin-right: 70px;  margin-top: 3rem; width: 1700px;" src="assets/img/portfolio/project1/gogest/image 24.png"> </img>
+                    
+                    <div class="zoom-container">
+                        <img id="zoomable-image" src="assets/img/portfolio/project1/gogest/image 24.png" alt="Zoomable Image">
                     </div>
-
 
 
                 <h5 class="mt-100 mb-10">Information architecture</h5>
@@ -416,6 +416,8 @@
                 <div style="display: flex; flex-direction: row;">
                     <img style="width:600px;margin-right: 70px;  margin-top: 3rem; width: 1600px;" src="assets/img/portfolio/project1/gogest/sitemap_new.png"> </img>
                 </div>
+
+                
                 
                 <h2 style="font-weight: 400;margin-top: 5rem;" > Mad Scientist Lab: Where Ideas Come to Life</h2>
                 
@@ -807,6 +809,62 @@
 <script src="assets/js/plugins.min.js"></script>
 <script src="assets/js/plugins/dsn-grid.min.js"></script>
 <script src="assets/js/custom.js"></script>
+
+
+
+
+<script>
+
+document.getElementById('zoomable-image').addEventListener('click', function() {
+    this.classList.toggle('zoomed-in');
+});
+
+
+
+
+
+</script>
+
+
+
+
+<style>
+.zoom-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+
+#zoomable-image {
+    margin-right: 70px;
+    width: 1400px;
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+.zoomed-in {
+    transform: scale(1.5); /* Adjust scale factor as needed */
+}
+
+
+</style>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const image = document.querySelector('.zoom-image');
+    let scale = 1;
+
+    image.addEventListener('click', () => {
+        scale = scale === 1 ? 1.2 : 1; // Toggle between slightly zoomed and normal state
+        image.style.transform = `scale(${scale})`;
+    });
+});
+
+
+</script>
+
+
+
 
 </body>
 
